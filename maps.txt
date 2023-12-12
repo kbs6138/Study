@@ -26,4 +26,41 @@ var details = {'Username':'User', 'Password':'Pass123'};
 
 다만, Dart의 Map은 순서를 보장하지 않습니다. 만약 순서가 중요한 경우에는 LinkedHashMap을 사용하면 됩니다. LinkedHashMap은 Map의 하위 클래스로, 요소의 삽입 순서를 기억합니다.
 
-이러한 정보가 도움이 되었기를 바랍니다. 추가적으로 궁금한 점이 있다면 언제든지 말씀해주세요.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dart의 Map은 사실상 '사전'과 같은 것입니다. 우리가 사전에서 단어를 찾을 때, '단어'를 찾으면 그 단어의 '의미'를 알 수 있죠. 여기서 '단어'가 키(key), '의미'가 값(value)에 해당합니다. 
+
+이제 Dart에서 Map을 어떻게 만드는지 알아봅시다. 
+
+1. 먼저, 빈 Map을 만드는 방법입니다.
+```dart
+var myMap = {};
+```
+이렇게 하면, 'myMap'이라는 빈 Map이 만들어집니다. 
+
+2. 또한, 처음부터 키와 값을 채운 Map을 만들 수도 있습니다.
+```dart
+var fruitColor = {'apple':'red', 'banana':'yellow', 'grape':'purple'};
+```
+여기서 'apple', 'banana', 'grape'가 키에 해당하고, 'red', 'yellow', 'purple'이 각 키의 값에 해당합니다.
+
+그럼 이제, 만들어진 Map에서 특정 키의 값을 어떻게 찾을 수 있는지 알아볼까요? 
+
+```dart
+var appleColor = fruitColor['apple'];
+```
+이렇게 하면 'apple'이라는 키의 값인 'red'가 'appleColor'라는 변수에 저장됩니다.
+
+또한, Map에 새로운 키와 값을 추가하는 방법은 다음과 같습니다.
+```dart
+fruitColor['orange'] = 'orange';
+```
+이렇게 하면, 'orange'라는 키와 그에 해당하는 값 'orange'가 fruitColor Map에 추가됩니다.
+
+마지막으로, Map에서 특정 키와 그에 해당하는 값을 제거하는 방법은 다음과 같습니다.
+```dart
+fruitColor.remove('apple');
+```
+이렇게 하면, 'apple'이라는 키와 그에 해당하는 값이 fruitColor Map에서 제거됩니다.
+
+이렇게 간단히 Dart의 Map에 대해 설명드렸습니다. 이해가 되셨나요? 더 궁금한 점이 있으시면 말씀해주세요.
