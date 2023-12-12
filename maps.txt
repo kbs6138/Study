@@ -1,0 +1,29 @@
+Dart 언어에서의 Map은 키와 값의 쌍을 저장하는 데이터 구조를 가리킵니다. Python의 dictionary, Java의 HashMap, JavaScript의 Object와 유사한 개념입니다. 각 키는 맵 내에서 유일해야하며, 키를 통해 대응하는 값을 빠르게 접근할 수 있습니다.
+
+Map을 선언하는 방법은 다음과 같습니다:
+```dart
+var details = new Map();
+details['Username'] = 'User';
+details['Password'] = 'Pass123';
+```
+또는 다음과 같이 선언할 수도 있습니다:
+```dart
+var details = {'Username':'User', 'Password':'Pass123'};
+```
+기본적인 Map의 동작은 다음과 같습니다:
+
+- Map에 요소 추가하기: `map[key] = value;`
+- Map에서 요소 가져오기: `map[key];`
+- Map에서 요소 제거하기: `map.remove(key);`
+- Map에 특정 키가 있는지 확인하기: `map.containsKey(key);`
+- Map에 특정 값이 있는지 확인하기: `map.containsValue(value);`
+- Map의 모든 키 가져오기: `map.keys;`
+- Map의 모든 값 가져오기: `map.values;`
+- Map이 비어있는지 확인하기: `map.isEmpty;`
+- Map의 요소 수 얻기: `map.length;`
+
+또한, Map은 forEach, map, where 등의 메소드를 제공하여 요소들을 순회하거나 변형하거나 필터링하는데 사용될 수 있습니다.
+
+다만, Dart의 Map은 순서를 보장하지 않습니다. 만약 순서가 중요한 경우에는 LinkedHashMap을 사용하면 됩니다. LinkedHashMap은 Map의 하위 클래스로, 요소의 삽입 순서를 기억합니다.
+
+이러한 정보가 도움이 되었기를 바랍니다. 추가적으로 궁금한 점이 있다면 언제든지 말씀해주세요.
