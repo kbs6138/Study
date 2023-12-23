@@ -1,4 +1,4 @@
-void main (){
-    var numbers ={1,2,3,4};
-print(numbers);
+void main() {
+  var numbers = {1, 12, 3, 4};
+  print(numbers);
 }
